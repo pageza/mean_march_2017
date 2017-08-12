@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- hanging my angular app on the html so it can reach the whole document -->
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>MEAN Friends</title>
+<!-- importing the angular files from bower_components -->
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="angular-cookies/angular-cookies.js"></script>
+<!-- importing my angular files with app.js first since it starts the app -->
+    <script src="config/app.js"></script>
+<!-- importing each controller and factory I make -->
+    <script src="factories/UserFactory.js"></script>
+    <script src="controllers/UsersController.js"></script>
+
+  </head>
+<!-- hanging ng-view on the body so that it displays my partials -->
+  <body ng-view>
+<!-- Sanity check to be removed before deploying live -->
+<!-- <h1>Hello world from the index.html</h1> -->
+  </body>
+</html>
